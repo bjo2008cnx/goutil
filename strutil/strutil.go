@@ -20,6 +20,7 @@ const (
  *************************************************************/
 
 // Padding a string.
+// length : 目标长度
 func Padding(s, pad string, length int, pos uint8) string {
 	diff := len(s) - length
 	if diff >= 0 { // do not need padding.
